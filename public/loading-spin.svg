@@ -1,0 +1,28 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  width="25px"
+  height="25px"
+>
+  <circle
+    class="circle"
+    cx="12"
+    cy="12"
+    r="10"
+    fill="none"
+    stroke="white"
+    stroke-width="2"
+  ></circle>
+  <circle
+    class="loader"
+    cx="12"
+    cy="12"
+    r="10"
+    fill="none"
+    stroke="#94A3B8"
+    stroke-width="2"
+    stroke-dasharray="31.4"
+    stroke-dashoffset="0"
+    transform="rotate(-90 12 12)"
+  ></circle>
+</svg>

@@ -2,26 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+::selection {
+	@apply bg-gray-950 text-white
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::-webkit-scrollbar {
+	@apply w-2.5
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::-webkit-scrollbar-track {
+	@apply bg-white dark:bg-slate-800
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-sky-500 dark:bg-green-500
+}
+
+h2 {
+  @apply text-3xl font-semibold
+}
+
+main {
+	@apply  min-h-custom md:min-h-custom-md
+}
+
+button {
+  all: unset;
+}
+
+img:not(.icon) {
+	/* height: auto;
+    object-fit: contain;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; */
+    /* max-height: calc(50vh + 180px); */
+		@apply h-auto object-contain max-w-full block my-0 mx-auto
+}
+
+.menu {
+	/* position: relative;
+	display:  inline-block;
+	width: 25px;
+	height: 25px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); */
+	@apply relative inline-block w-[25px] h-[25px] right-0 top-1/2 -translate-y-1/2
+}
+
+.menu span {
+	@apply my-0 mx-auto relative top-2.5 before:absolute after:absolute w-[25px] h-1 bg-black block before:-mt-2 after:mt-2 before:w-[25px] before:h-1 before:bg-black before:block after:w-[25px] after:h-1 after:bg-black after:block 
+}
+
+.menu span {
+	-webkit-transition-duration: 0s; transition-duration: 0s;
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.menu.active span {
+	background-color: rgba(0,0,0,0.0);
+	-webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.menu span:before {
+	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+.menu.active span:before {
+	margin-top: 0;
+	-webkit-transform: rotate(45deg); transform: rotate(45deg);
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+.menu span:after {
+	-webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+	-webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+	-webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+.menu.active span:after {
+	margin-top: 0;
+	-webkit-transform: rotate(-45deg); transform: rotate(-45deg);
+	-webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
 }
