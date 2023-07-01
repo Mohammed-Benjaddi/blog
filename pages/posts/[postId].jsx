@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import Container from "@/components/Elements/Container";
+import Container from "../../components/Elements/Container";
 import { fetchData, fetchSelectedPost } from "../api/getData";
 import Link from "next/link";
 import Head from "next/head";

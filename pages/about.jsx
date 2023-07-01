@@ -1,4 +1,4 @@
-import Container from "@/components/Elements/Container";
+import Container from "../components/Elements/Container";
 import Head from "next/head";
 import React from "react";
 

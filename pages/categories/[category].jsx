@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect, useState } from "react";
 import { fetchCategories, fetchCategoryPosts } from "../api/getData";
-import Post from "@/components/Elements/Post";
-import Container from "@/components/Elements/Container";
+import Post from "../../components/Elements/Post";
+import Container from "../../components/Elements/Container";
 import Head from "next/head";
 
 const category = ({ data, category }) => {

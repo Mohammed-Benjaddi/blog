@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Hero from "@/components/Sections/Hero";
-import LatestPosts from "@/components/Sections/LatestPosts";
-import Container from "@/components/Elements/Container";
-import Categories from "@/components/Sections/Categories";
+import Hero from "../components/Sections/Hero";
+import LatestPosts from "../components/Sections/LatestPosts";
+import Container from "../components/Elements/Container";
+import Categories from "../components/Sections/Categories";
 import { fetchCategories, fetchData } from "./api/getData";
 
 export default function Home({ data, categories }) {

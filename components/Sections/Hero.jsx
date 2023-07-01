@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import background from "../../public/background.png";
 
 const Hero = () => {
   return (
     <div className="relative w-full h-96 lg:h-[calc(100vh-64px)] flex justify-center items-center flex-col gap-10">
       <Image
         alt="Mountains"
-        src={"/background.png"}
+        src={background}
         fill
         quality={100}
         sizes="100vw"

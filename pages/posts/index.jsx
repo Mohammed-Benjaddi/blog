@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import Container from "@/components/Elements/Container";
+import Container from "../../components/Elements/Container";
 import { fetchData } from "../api/getData";
-import Post from "@/components/Elements/Post";
+import Post from "../../components/Elements/Post";
 import Head from "next/head";
 
 const posts = ({ data }) => {

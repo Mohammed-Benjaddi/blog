@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout from '../components/Elements/Layout';
-import '@/styles/globals.css'
+import '../styles/globals.css'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";

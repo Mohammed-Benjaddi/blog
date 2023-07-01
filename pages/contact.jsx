@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Container from "@/components/Elements/Container";
-import SentSuccesfully from "@/components/Elements/SentSuccesfully";
+import Container from "../components/Elements/Container";
+import SentSuccesfully from "../components/Elements/SentSuccesfully";
 import Image from "next/image";
 import Head from "next/head";
 
