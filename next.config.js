@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // images.unoptimazed: false,
+  images: {
+    unoptimized: true,
+  },
   serialize: (value) => {
     if (typeof value === 'object' && value !== null) {
       return JSON.stringify(value);
