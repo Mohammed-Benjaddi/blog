@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Container from "../Elements/Container";
+import lightMode from "../../public/light.svg";
+import darkMode from "../../public/dark.svg";
 
 const Navbar = () => {
   const [isDark, setIsDark] = useState(false);
@@ -26,7 +28,7 @@ const Navbar = () => {
       <Container className="h-full flex justify-between">
         <div className="h-full flex items-center w-1/4 lg:w-1/3">
           <Image
-            src={`/${isDark ? "light" : "dark"}.svg`}
+            src={isDark ? lightMode : darkMode}
             className="icon cursor-pointer"
             width={25}
             height={25}

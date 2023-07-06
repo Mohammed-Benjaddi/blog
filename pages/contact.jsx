@@ -22,10 +22,10 @@ const contact = () => {
     setLoadingBtn(true);
     emailjs
       .sendForm(
-        "service_m55xxgo",
-        "template_5xhek3h",
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
         form.current,
-        "6hmIXTA7MEr6df7P2"
+        "YOUR_PUBLIC_KEY"
       )
       .then(
         () => {
