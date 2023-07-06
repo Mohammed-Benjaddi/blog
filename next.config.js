@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: "export",
+  // images.unoptimazed: false,
   serialize: (value) => {
     if (typeof value === 'object' && value !== null) {
       return JSON.stringify(value);
